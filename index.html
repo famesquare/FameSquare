@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FameSquare</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid" id="grid"></div>
+    </div>
+
+    <!-- Main Info Section -->
+    <div class="info-container" id="info-container">
+      <h2>FameSquare</h2>
+      <p class="info-text">
+        To join FameSquare, email famesquareofficial@gmail.com with your photo,
+        name and a link to your website or preferred social media profile
+      </p>
+      <p><span id="reserved-count">0</span> / 1024 squares reserved</p>
+      <p>Current Price: <span style="color: rgb(55, 211, 55)">10€</span></p>
+      <a
+        href="terms-and-privacy.html"
+        style="color: rgb(141, 141, 141); text-decoration: underline"
+        >Terms & Services</a
+      >
+
+      <!-- Search Input -->
+      <div style="margin-top: 20px">
+        <input
+          id="search-input"
+          type="number"
+          placeholder="Enter square number"
+          min="1"
+          max="1024"
+        />
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+
+    <!-- User Info Section (hidden by default) -->
+    <div class="info-container" id="user-info" style="display: none">
+      <div id="user-display"></div>
+      <button id="back-btn" style="margin-top: 20px">Back</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
